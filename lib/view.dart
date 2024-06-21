@@ -4,14 +4,14 @@ import 'package:flutter_task/home.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DetailsPage extends StatefulWidget {
+class details extends StatefulWidget {
   final String headline;
   final String description;
   final String imageUrl;
   final String createAt;
   final String id;
 
-  DetailsPage({
+  details({
     Key? key,
     required this.headline,
     required this.description,
@@ -21,10 +21,10 @@ class DetailsPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<DetailsPage> createState() => _DetailsPageState();
+  State<details> createState() => _detailsState();
 }
 
-class _DetailsPageState extends State<DetailsPage> {
+class _detailsState extends State<details> {
   final GetStorage storage = GetStorage();
   List<Map<String, dynamic>> list = [];
   List id_list = [];
